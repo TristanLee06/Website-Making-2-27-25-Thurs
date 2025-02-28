@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services - Sunlight Science</title>
+  
+  <!-- Import custom font from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* GLOBAL STYLES */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background-color: #ffe600;
+      background-image: url("background.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      font-family: 'Open Sans', sans-serif;
+      color: #333;
+      line-height: 1.6;
+    }
+    /* HEADER & NAV */
+    header {
+      background-color: rgba(255,255,255,0.8);
+      border-bottom: 2px solid #ccc;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header h1 {
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+      text-shadow: 1px 1px 2px #aaa;
+      margin-bottom: 0.5rem;
+    }
+    nav {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    nav a:hover { background-color: #ddd; }
+    /* MAIN CONTENT */
+    main {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-gap: 2rem;
+      padding: 2rem;
+    }
+    aside {
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background-color: #fff;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    section {
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background-color: #fff;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    section h2 { margin-bottom: 0.5rem; font-weight: 600; }
+    article {
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 1rem;
+    }
+    article h3 { margin-bottom: 0.25rem; font-size: 1.2rem; font-weight: 600; }
+    footer {
+      background-color: rgba(255,255,255,0.9);
+      text-align: center;
+      padding: 1rem;
+      border-top: 2px solid #ccc;
+    }
+    @media (max-width: 768px) {
+      main { grid-template-columns: 1fr; }
+      header h1 { font-size: 1.5rem; }
+      nav { gap: 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sunlight Science</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  
+  <main>
+    <!-- SIDEBAR -->
+    <aside>
+      <h2>Our Offerings</h2>
+      <p>Explore the services we provide to harness the benefits of natural sunlight.</p>
+      <ul>
+        <li><a href="#">Personal Consultations</a></li>
+        <li><a href="#">Educational Workshops</a></li>
+        <li><a href="#">Wellness Programs</a></li>
+      </ul>
+    </aside>
+    <!-- PRIMARY SECTION -->
+    <section>
+      <h2>Our Services</h2>
+      <article>
+        <h3>Personal Consultations</h3>
+        <p>Receive personalized advice from our experts on how to optimize your natural light exposure for improved health and wellbeing.</p>
+      </article>
+      <article>
+        <h3>Educational Workshops</h3>
+        <p>Join interactive workshops and seminars that dive deep into the science of natural light, circadian rhythms, and holistic wellness strategies.</p>
+      </article>
+      <article>
+        <h3>Wellness Programs</h3>
+        <p>Enroll in our comprehensive programs designed to integrate natural sunlight into your daily routine for long-term benefits.</p>
+      </article>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 Sunlight Science</p>
+  </footer>
+</body>
+</html>

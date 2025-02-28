@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Sunlight Science</title>
+  
+  <!-- Import custom font from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* GLOBAL STYLES */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background-color: #ffe600;
+      background-image: url("background.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      font-family: 'Open Sans', sans-serif;
+      color: #333;
+      line-height: 1.6;
+    }
+    /* HEADER & NAV */
+    header {
+      background-color: rgba(255,255,255,0.8);
+      border-bottom: 2px solid #ccc;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header h1 {
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+      text-shadow: 1px 1px 2px #aaa;
+      margin-bottom: 0.5rem;
+    }
+    nav {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    nav a:hover { background-color: #ddd; }
+    /* MAIN CONTENT */
+    main {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-gap: 2rem;
+      padding: 2rem;
+    }
+    aside {
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background-color: #fff;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    section {
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background-color: #fff;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: rgba(255,255,255,0.9);
+      text-align: center;
+      padding: 1rem;
+      border-top: 2px solid #ccc;
+    }
+    @media (max-width: 768px) {
+      main { grid-template-columns: 1fr; }
+      header h1 { font-size: 1.5rem; }
+      nav { gap: 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>Sunlight Science</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- SIDEBAR -->
+    <aside>
+      <h2>Our Mission</h2>
+      <p>We believe in the transformative power of natural light. Our goal is to educate and empower individuals to harness sunlight for better health and wellbeing.</p>
+    </aside>
+    <!-- PRIMARY SECTION -->
+    <section>
+      <h2>About Us</h2>
+      <article>
+        <h3>Who We Are</h3>
+        <p>Sunlight Science is a collective of researchers, health experts, and wellness enthusiasts dedicated to exploring the benefits of natural light exposure. We provide reliable, science-backed information to help you make informed decisions about your health.</p>
+      </article>
+      <article>
+        <h3>Our Story</h3>
+        <p>Founded in 2020, Sunlight Science emerged from a shared passion for understanding how natural elements, like sunlight, influence our bodies. With a blend of cutting-edge research and practical advice, we strive to make the science accessible to everyone.</p>
+      </article>
+    </section>
+  </main>
+  
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Sunlight Science</p>
+  </footer>
+</body>
+</html>
